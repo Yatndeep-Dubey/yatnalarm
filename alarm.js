@@ -9,6 +9,10 @@ var audio = new Audio('Om shanti om instrumental.mp3');
 // function to play the alarm ring tone
 function ringBell() {
     audio.play();
+function mediaPlaybackRequiresUserGesture() { 
+  var audio = document.createElement('Om shanti om instrumental.mp3');
+  audio.play();
+  return audio.paused;
 }
 
 // This function will run whenever alarm is set from the UI
